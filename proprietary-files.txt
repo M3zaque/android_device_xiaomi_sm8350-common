@@ -6,6 +6,10 @@ vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
+# ANT+ - from LA.UM.9.14.r1-18600.02-LAHAINA.QSSI12.0
+vendor/lib/hw/com.dsi.ant@1.0-impl.so|7985aacab9144eb40b39a3fa7ace429b5fc344b5
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|a6f313ee471609f35c242550024174bd3ead402d
+
 # Audio FX modules
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
