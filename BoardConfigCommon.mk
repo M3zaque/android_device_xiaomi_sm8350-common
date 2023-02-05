@@ -60,22 +60,22 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SCREEN_DENSITY := 440
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
 # HIDL
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/hidl/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/hidl/compatibility_matrix.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(COMMON_PATH)/hidl/vendor_framework_compatibility_matrix.xml \
-    $(COMMON_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml
+    $(COMMON_PATH)/configs/hidl/vendor_framework_compatibility_matrix.xml \
+    $(COMMON_PATH)/configs/hidl/xiaomi_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
-    $(COMMON_PATH)/hidl/manifest_lahaina.xml \
-    $(COMMON_PATH)/hidl/manifest_xiaomi.xml
+    $(COMMON_PATH)/configs/hidl/manifest_lahaina.xml \
+    $(COMMON_PATH)/configs/hidl/manifest_xiaomi.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -147,10 +147,10 @@ TARGET_BOARD_PLATFORM := lahaina
 TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/properties/system_ext.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
